@@ -97,7 +97,7 @@ class CarouselsController extends Controller
               'url' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             ]);
             $path = $request->file('url')->store('public/images');
-            $carousel->url = $path;
+            $carousel->url = $path; 
         }
         $carousel->title = $request->title;
         $carousel->description = $request->description;

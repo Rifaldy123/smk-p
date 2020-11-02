@@ -13,9 +13,17 @@ class CreateCarouselsTable extends Migration
      */
     public function up()
     {
+        /**
+         * type 1: https://imgur.com/xRo7k8S.png
+         * type 2: https://imgur.com/SVeAm3r.png
+         */
         Schema::create('carousels', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->tinyInteger('type')->default(1);
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->text('url');
+            $table->timestamps(); 
         });
     }
 
