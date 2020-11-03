@@ -16,4 +16,4 @@ use App\Http\Controllers\CarouselsController;
 
 
     Route::resource('carousels',CarouselsController::class);
- 
+  

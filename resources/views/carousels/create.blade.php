@@ -11,7 +11,7 @@
             <a class="btn btn-primary" href="{{ route('carousels.index') }}"> Back</a>
         </div>
     </div>
-</div> 
+</div>  
    
   @if(session('status'))
     <div class="alert alert-success mb-1 mt-1">
