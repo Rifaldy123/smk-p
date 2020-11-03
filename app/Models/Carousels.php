@@ -15,4 +15,4 @@ class Carousels extends Model
     ];
 }
 
- 
+  

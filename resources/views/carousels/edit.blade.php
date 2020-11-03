@@ -1,4 +1,4 @@
-@extends('layouts')
+ @extends('layouts')
 @section('content')
 
 <div class="container mt-2">
@@ -14,7 +14,7 @@
         </div>
     </div>
    
-  @if(session('status'))
+  @if(session('status')) 
     <div class="alert alert-success mb-1 mt-1">
         {{ session('status') }}
     </div>

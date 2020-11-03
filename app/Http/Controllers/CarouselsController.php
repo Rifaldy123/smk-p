@@ -18,7 +18,7 @@ class CarouselsController extends Controller
     
         return view('carousels.index', $data);
     }
-     
+      
     /**
      * Show the form for creating a new resource.
      *
@@ -40,7 +40,7 @@ class CarouselsController extends Controller
         $request->validate([
         	'type' => 'required',
             'title' => 'required',
-            'url' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'url' => 'required|image|mimes:jpg,png,jpeg|max:2048',
             'description' => 'required',
         ]);
         $path = $request->file('url')->store('public/images');
